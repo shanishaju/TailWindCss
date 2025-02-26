@@ -1,0 +1,144 @@
+🌈 Tailwind CSS Cheat Sheet for Website Design
+🎨 Background & Text Colors
+🔹 bg-red-500 → Red background
+🔹 bg-blue-600 → Dark blue background
+🔹 bg-gradient-to-r from-purple-400 to-pink-500 → Gradient background
+
+🔹 text-white → White text
+🔹 text-gray-700 → Dark gray text
+🔹 text-xl → Extra-large text
+🔹 text-2xl font-bold → Larger and bold text
+
+📏 Spacing (Margin & Padding)
+🔹 p-4 → Padding 1rem (16px)
+🔹 px-6 → Horizontal padding
+🔹 py-3 → Vertical padding
+
+🔹 m-4 → Margin 1rem
+🔹 mx-auto → Center align horizontally
+
+📐 Width & Height
+🔹 w-full → Full width
+🔹 w-1/2 → 50% width
+🔹 max-w-lg → Max width large
+🔹 h-64 → Height 16rem (256px)
+🔹 min-h-screen → Minimum height of screen
+
+🖼️ Image & Background Handling
+🔹 object-cover → Fit image inside container
+🔹 object-contain → Keep image aspect ratio
+🔹 bg-cover bg-center → Background image covers fully
+
+🎭 Border & Rounded Corners
+🔹 border border-gray-300 → Gray border
+🔹 border-2 border-blue-500 → Thick blue border
+🔹 rounded-lg → Large rounded corners
+🔹 rounded-full → Fully rounded (circle)
+
+🎨 Shadow & Effects
+🔹 shadow-lg → Large shadow
+🔹 shadow-md → Medium shadow
+🔹 shadow-inner → Inner shadow
+🔹 opacity-50 → 50% transparency
+
+📱 Responsive Design (Media Queries)
+🔹 sm: → Small (≥640px)
+🔹 md: → Medium (≥768px)
+🔹 lg: → Large (≥1024px)
+🔹 xl: → Extra large (≥1280px)
+
+exmple
+<div class="bg-red-500 md:bg-blue-500 lg:bg-green-500">
+  Changes color based on screen size
+</div>
+
+
+🖱️ Hover, Focus & Active States
+🔹 hover:bg-blue-700 → Change background on hover
+🔹 hover:text-white → White text on hover
+🔹 focus:ring-2 focus:ring-blue-500 → Ring around element when focused
+🔹 active:bg-green-500 → Change color when clicked
+
+🔄 Flexbox & Grid Layout
+📌 Flexbox
+🔹 flex → Enables flexbox
+🔹 flex-row → Items in row
+🔹 flex-col → Items in column
+🔹 justify-center → Center horizontally
+🔹 items-center → Center vertically
+🔹 space-x-4 → Horizontal gap
+🔹 space-y-4 → Vertical gap
+
+📌 Grid System
+🔹 grid grid-cols-2 → Two equal columns
+🔹 grid-cols-3 → Three equal columns
+🔹 gap-4 → Spacing between items
+🔹 col-span-2 → Span two columns
+
+🔳 Display & Visibility
+🔹 hidden → Hide element
+🔹 block → Display block
+🔹 inline-block → Display inline-block
+🔹 flex → Display flexbox
+🔹 grid → Display grid
+
+🔤 Fonts & Text Styling
+🔹 font-sans → Sans-serif font
+🔹 font-serif → Serif font
+🔹 font-mono → Monospace font
+🔹 uppercase → Uppercase text
+🔹 capitalize → Capitalize first letter
+🔹 tracking-wide → Increase letter spacing
+
+🚀 Animations & Transitions
+🔹 transition-all duration-300 → Smooth transition
+🔹 animate-bounce → Bouncing animation
+🔹 animate-spin → Spinning animation
+
+Example:
+
+html
+Copy code
+<button class="bg-red-500 text-white p-4 rounded-lg transition-all duration-300 hover:bg-red-700">
+  Hover Me
+</button>
+
+📌 Sticky & Fixed Positions
+🔹 fixed top-0 left-0 → Sticks to top-left
+🔹 absolute bottom-0 right-0 → Positioned at bottom-right
+🔹 sticky top-0 → Sticks when scrolling
+------------------------------------------------------------------------------Tailwind CSS Grid System Notes
+🔳 Basic Grid Classes
+grid → Enables CSS Grid
+grid-cols-2 → Creates 2 equal columns
+grid-cols-3 → Creates 3 equal columns
+grid-cols-4 → Creates 4 equal columns
+🔀 Gap (Spacing Between Items)
+gap-2 → Small gap
+gap-4 → Medium gap
+gap-6 → Large gap
+📱 Responsive Grid (Media Queries)
+sm:grid-cols-1 → 1 column on small screens
+md:grid-cols-2 → 2 columns on medium screens
+lg:grid-cols-3 → 3 columns on large screens
+xl:grid-cols-4 → 4 columns on extra-large screens
+📌 Column Spanning
+col-span-2 → Item spans 2 columns
+col-span-3 → Item spans 3 columns
+col-span-full → Item spans all columns
+📐 Row Spanning
+row-span-2 → Item spans 2 rows
+row-span-3 → Item spans 3 rows
+🔄 Auto-Fit & Auto-Fill
+grid-cols-auto → Adjust columns based on content
+grid-cols-none → Removes default column sizing
+📍 Aligning Items
+place-items-center → Center both vertically & horizontally
+items-start → Align items at the start
+items-center → Align items in the center
+items-end → Align items at the end
+📍 Justifying Content
+justify-start → Align items to the left
+justify-center → Center items horizontally
+justify-end → Align items to the right
+justify-between → Space between items
